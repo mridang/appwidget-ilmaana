@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/widget_frame"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/widget_details"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="@dimen/widget_spacing"
+        android:layout_marginLeft="@dimen/widget_spacing"
+        android:layout_marginRight="@dimen/widget_spacing"
+        android:layout_marginTop="@dimen/widget_spacing"
+        android:background="@drawable/widget_background"
+        android:gravity="center_vertical"
+        android:padding="@dimen/widget_spacing" >
+
+        <ImageView
+            android:id="@+id/widget_icon"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_launcher" />
+
+        <AdapterViewFlipper
+            android:id="@+id/image_flipper"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@+id/widget_icon"
+            android:animateLayoutChanges="false"
+            android:autoStart="true"
+            android:flipInterval="1500"
+            android:paddingLeft="@dimen/widget_spacing" >
+        </AdapterViewFlipper>
+    </RelativeLayout>
+
+</LinearLayout>

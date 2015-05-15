@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="location_entries">
+        <item>Northern Finland</item>
+        <item>Central Finland</item>
+        <item>Southern Finland</item>
+    </string-array>
+    <string-array name="location_values">
+        <item>northern</item>
+        <item>middle</item>
+        <item>southern</item>
+    </string-array>
+
+</resources>
